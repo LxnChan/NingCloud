@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>301页面</title>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<link rel="icon" type="image/ico" href="/favicon.ico">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+<link rel="dns-prefetch" href="https://131blog.cdn.acg.fund">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+<style>
+code {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 1.5rem;
+    color: #F87DB8;
+    background-color: #f9f2f4;
+    border-radius: 4px
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+#card {
+    background-image: url(https://131blog.cdn.acg.fund/usr/uploads/2019/05/2863109534.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a {
+    color: #F87DB8;
+}
+
+</style>
+</head>
+<body>
+    <div class="container" style="margin-top:20px;">
+        <div class="row">  
+            <div class="col l4 offset-l4 m6 offset-m3 s10 offset-s1">
+                <div class="row">  
+                    <div class="col s10 offset-s1">
+                            <div id="card" class="card">
+                                <div id="card_image" class="card-image" style="height:320px">
+                                    <!-- <div style="position: absolute; bottom:0; right:0;"><span style="color:#CDCDCD; font-size: 0.5rem;">Pixiv: 65309723</span></div> -->
+                                </div>
+                                <div class="card-content center-align" style="background-color: white;">
+                                    <span style="color: #F93995">提示语</span>
+                                    <br /><br />
+                                    <code><a href="https://i.kurumi.ink/">i.kurumi.ink</a></code>
+                                    <br /><br />
+                                </div>
+                                <div class="progress" style="background-color:#FFB7D9">
+                                    <div id="progress" class="determinate" style="width: 0%; background-color: #F93995;"></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+var card = document.getElementById("card");
+var card_image = document.getElementById("card_image");
+var progress = document.getElementById("progress");
+var countDown = 100;
+function updateElement(){
+    countDown--;
+    card_image.style.height = card.offsetWidth;
+    progress.style.width = ((100 - countDown)).toString() + "%";
+    if (countDown == 0){
+        clearInterval(interval);
+        window.location.replace("https://i.kurumi.ink/");
+    }
+}
+updateElement();
+var interval = setInterval(function(){updateElement()},50);
+</script>
+</body>
+</html>
