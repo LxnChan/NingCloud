@@ -1,0 +1,27 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "luoli.moc3",
+		"Textures": [
+			"luoli.8192/texture_00.png",
+			"luoli.8192/texture_01.png"
+		],
+		"Physics": "luoli.physics3.json",
+		"DisplayInfo": "luoli.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
