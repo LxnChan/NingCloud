@@ -6,12 +6,16 @@
 
 jsd引用方法：
 
-```
+```link
 https://cdn.jsdelivr.net/gh/arlxn/ningcloud@<tags>/<directory>/<file>
 ```
 
 示例：
 
-```
+```link
 https://cdn.jsdelivr.net/gh/arlxn/ningcloud@cdn-site-r25/jquery.min.js
 ```
+
+---
+
+## 早已弃用。
